@@ -15,5 +15,10 @@ pipeline{
                 cleanWs()
             }
         }
+        stage('SCM Checkout'){
+            steps{
+                git branch: 'main', url: 'https://github.com/devops-aws-linux/registration-app.git'
+            }
+        }
     }
 }
