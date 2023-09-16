@@ -5,9 +5,9 @@ pipeline{
         maven 'Maven3'
     }
     stages{
-        stage("Hello World"){
+        stage('Say Hello'){
             steps{
-                sh 'Hello World'
+                sh "Hello World"
             }
         }
     }
