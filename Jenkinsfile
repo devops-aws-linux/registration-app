@@ -10,5 +10,10 @@ pipeline{
                 sh 'echo Hello World'
             }
         }
+        stage('Clean WS'){
+            steps{
+                cleanWS()
+            }
+        }
     }
 }
