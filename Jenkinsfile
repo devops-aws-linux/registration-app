@@ -20,5 +20,10 @@ pipeline{
                 git branch: 'main', url: 'https://github.com/devops-aws-linux/registration-app.git'
             }
         }
+        stage("maven phase-1"){
+            steps{
+                sh 'mvn clean test'
+            }
+        }
     }
 }
